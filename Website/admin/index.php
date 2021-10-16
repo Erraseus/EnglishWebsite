@@ -41,21 +41,17 @@ if(mysql_num_rows($res) > 0) {
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <title>Administration</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="Sebastian Drebenstedt">
+	<meta charset="utf-8">
+	<title>Administration</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Sebastian Drebenstedt">
 	
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 
-  <link rel="shortcut icon" href="img/favicon.png">
-  
-	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<link rel="shortcut icon" href="img/favicon.png">
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
 
 
 
