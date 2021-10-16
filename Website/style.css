@@ -1,0 +1,94 @@
+textarea{
+	  padding:10px;
+	  width:25em;
+	  font-size:2em;
+	  margin:50px auto;
+	  display:block;
+	  border-radius:10px;
+	  border:6px solid #0080FF;	  
+	  min-height:7em;
+}
+.textinput{
+	color: #00FF00;
+}
+
+
+body{
+	background-image: url('img/background.png');
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
+	background-attachment: fixed;
+}
+
+header{ /*23E0DA    561F9E*/
+	height: 111px;
+	position: relative;
+	z-index: 10;
+	width: 100%; 
+}
+header .menu {
+	text-align: right;
+}
+
+header .row{
+	padding-top: 0;
+}
+header .favicon{
+	background: url('img/Icon.png');
+	width: 300px;
+	height: 70px;
+	margin-top: 30px;
+}
+header nav {
+	height: 111px;
+	overflow: hidden;
+}
+
+header nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+header nav ul li {
+	display: inline-block;
+	padding: 10px 0 0 40px;
+}
+
+header nav ul li ul li a {
+	line-height: 2em;
+	font-size: 0.9em;
+}
+
+header nav ul li a {
+	line-height: 111px;
+	color: #000;
+	font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+	color: #f2f2f2;
+}
+
+
+.middle-home{
+    height: 200px;
+    width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+.middle-creadits{
+    width: 400px;
+    height: 200px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+
