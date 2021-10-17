@@ -11,6 +11,17 @@ if(!empty($_REQUEST['error'])){
 </div>
 
 <?php
+}else{
+?>
+
+<div class="container middle-credits">
+	<div class="row col col-12">
+		<center><h1 class="win">Geschafft!</h1></center>
+		<center>Keine Fehler</center>
+	</div>
+</div>
+
+<?php
 }
 ?>
 
