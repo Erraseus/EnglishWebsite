@@ -15,14 +15,14 @@ if(!empty($_REQUEST['id'])) {
 
 	</div class="row col col-12">
 		<center><h1><?php echo $row['name']; ?></h1></center>
-		<textarea class="original no-copy-paste" id="originalText" readonly><?php echo $text; ?></textarea>
+		<textarea class="original" id="originalText" readonly><?php echo $text; ?></textarea>
 	</div>
 	
 
 	
 	</div class="row col col-12">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<textarea  id="neuerTextIn no-copy-paste" autofocus placeholder="Bitte hier eingeben" ></textarea>
+		<textarea  id="neuerTextIn" id="no-copy-paste" autofocus placeholder="Bitte hier eingeben" ></textarea>
 	</div>
 
 
