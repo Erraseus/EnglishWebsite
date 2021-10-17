@@ -36,7 +36,15 @@ $(document).ready(function() {
     
     // Document Ctrl + C/V 
     $(document).keydown(function(e) {
-        if (ctrlDown && (e.keyCode == cKey)) window.location = "https://www.youtube.com/watch?v=AGvrDe3rKxA";
-        if (ctrlDown && (e.keyCode == vKey)) window.location = "https://www.youtube.com/watch?v=AGvrDe3rKxA";
+        if (ctrlDown && (e.keyCode == cKey)) Alarm();
+        if (ctrlDown && (e.keyCode == vKey)) Alarm();
     });
 });
+
+function Alarm(){
+	const music = new Audio('sound/Alarm.wav');
+	music.loop =true;
+	music.play();
+	music.value = 100;
+	//Copieren Verboten
+}
