@@ -17,3 +17,7 @@ In addition, a user administration is also integrated with which you can appoint
 <br><br>
 ![Admin](Screenshots/admin_home.png)
 ![TextEditor](Screenshots/admin_list_text.png)
+
+<br><br><br><br>
+# Credits
+![credits](Screenshots/Credits.png)
