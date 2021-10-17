@@ -25,8 +25,8 @@ require "common.inc.php";
 			<div class="col col-7 menu">
 				<nav>
 					<ul>
-						<b><li><a href="index.php?view=uebung">Übungen</a></li></b>
-						<b><li><a href="index.php?view=creadits">Credits</a></li></b>
+						<b><li><a href="index.php?view=list_uebungen">Übungen</a></li></b>
+						<b><li><a href="index.php?view=credits">Credits</a></li></b>
 					</ul>
 				</nav>
 			</div>

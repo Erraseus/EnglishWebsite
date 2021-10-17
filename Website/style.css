@@ -6,10 +6,12 @@ textarea{
 	  display:block;
 	  border-radius:10px;
 	  border:6px solid #0080FF;	  
-	  min-height:7em;
+	  min-height:6em;
+	  background: transparent;
 }
-.textinput{
+.win{
 	color: #00FF00;
+	font-size: 5em;
 }
 
 
@@ -82,7 +84,7 @@ header nav ul li a:hover {
     margin-top: -100px;
     margin-left: -200px;
 }
-.middle-creadits{
+.middle-credits{
     width: 400px;
     height: 200px;
     position: fixed;

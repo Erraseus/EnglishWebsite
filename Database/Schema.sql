@@ -1,40 +1,29 @@
-SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
-SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
-SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
-
-CREATE SCHEMA IF NOT EXISTS `Englisch` DEFAULT CHARACTER SET utf8 ;
-USE `Englisch` ;
-
-CREATE TABLE IF NOT EXISTS `Englisch`.`users` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(32) NOT NULL,
-  `password` VARCHAR(32) NOT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-ADD UNIQUE INDEX `name_UNIQUE` (`name` ASC);
-
-CREATE TABLE IF NOT EXISTS `Englisch`.`texts` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(45) NOT NULL,
-  `value` TEXT NOT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-CREATE TABLE IF NOT EXISTS `Englisch`.`sessions` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `session_id` VARCHAR(32) NOT NULL,
-  `user_id` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `sessions` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `session_id` varchar(32) NOT NULL,
+  `user_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `sessions_user_id_idx` (`user_id` ASC),
-  CONSTRAINT `sessions_user_id`
-    FOREIGN KEY (`user_id`)
-    REFERENCES `Englisch`.`users` (`id`)
-	ON DELETE CASCADE
-	ON UPDATE CASCADE)
-ENGINE = InnoDB;
+  KEY `sessions_user_id_idx` (`user_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=25 ;
 
 
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+CREATE TABLE IF NOT EXISTS `texts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `value` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(32) NOT NULL,
+  `password` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+INSERT INTO `users` (`id`, `name`, `password`) VALUES
+(1, 'Sebastian Drebenstedt', 'ae95b8e6a0c5a60ecd25421b1adb1d7c'),
+(2, 'Felix Heydick', 'e10adc3949ba59abbe56e057f20f883e');
+
+ALTER TABLE `sessions`
+  ADD CONSTRAINT `sessions_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
