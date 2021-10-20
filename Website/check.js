@@ -9,6 +9,8 @@ function Check(){
 		words = newtext.split(' ');
 		if(words[words.length - 1] == ""){
 			alert("Du hasst einen Fehler: "+words[words.length - 2]);
+		}else if(words[words.length - 2] == ""){
+			alert("Du hasst einen Fehler: "+words[words.length - 3]);
 		}else{
 			alert("Du hasst einen Fehler: "+words[words.length - 1]);
 		}
