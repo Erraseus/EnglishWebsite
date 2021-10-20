@@ -7,15 +7,21 @@ function Check(){
 	
 	if(newtext != kurzertext){
 		words = newtext.split(' ');
-		alert("Du hasst einen Fehler: "+words[words.length - 1]);
+		if(words[words.length - 1] == ""){
+			alert("Du hasst einen Fehler: "+words[words.length - 2]);
+		}else{
+			alert("Du hasst einen Fehler: "+words[words.length - 1]);
+		}
 		fehler++
 		console.log(fehler);
+		
 	}else{
 		if(kurzertext.length > text.length -1){
 			window.location = "index.php?view=win&&error="+fehler;
 		}
 	}
 }
+
 
 $(document).ready(function() {
     var ctrlDown = false,
