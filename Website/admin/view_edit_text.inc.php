@@ -15,6 +15,7 @@ if(!empty($_REQUEST['id'])) {
 		// Speichern
 		$sql = "UPDATE texts SET
 			`name`    = ".m($_POST['name']).",
+			`class`    = ".intval($_POST['class']).",
 			`value`    = ".m($_POST['text'])."
 			WHERE id=".intval($id);
 
@@ -23,10 +24,11 @@ if(!empty($_REQUEST['id'])) {
 	}
 } else {
 	$id = 0;
-
+	
 	if(!empty($_POST['save'])) {
 		$sql = "INSERT INTO texts SET
 			`name`    = ".m($_POST['name']).",
+			`class`    = ".intval($_POST['class']).",
 			`value`    = ".m($_POST['text']);
 
 		if(!mysql_query($sql)) die(mysql_error());
@@ -43,6 +45,10 @@ $row = mysql_fetch_assoc($res);
 	<div class="form-group">
 		<label>Name</label>
 		<input class="form-control" type="text" name="name" value="<?php echo $row['name']; ?>">
+	</div>
+	<div class="form-group">
+		<label>Klasse</label>
+		<input class="form-control" type="number" name="class" value="<?php echo $row['class']; ?>">
 	</div>
 	<div class="form-group">
 		<label>Text</label>

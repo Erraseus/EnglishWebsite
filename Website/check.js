@@ -1,4 +1,7 @@
-window.addEventListener("keypress", Check, false);
+$(document).on('keyup', function () {
+    Check();
+});
+
 fehler = 0
 function Check(){
 	text = document.getElementById("originalText").value

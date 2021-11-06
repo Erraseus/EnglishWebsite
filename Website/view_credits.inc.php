@@ -6,7 +6,7 @@
 		<p>Felix Heydick</p><br>
 		<h3>Programmierung<br>und Design:</h3>
 		<p>Sebastian Drebenstedt</p><br>
-		<h3>Logo</h3>
+		<h3>Logo:</h3>
 		<p>Marlen Bieler</p>
 		</center>
 	</div>

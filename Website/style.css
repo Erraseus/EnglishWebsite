@@ -1,13 +1,26 @@
+select{
+	border:2px solid #0080FF;
+	background: transparent;	
+	margin-bottom: 40 px;
+}
+
+input{
+	border:2px solid #0080FF;
+	background: transparent;	
+}
+
+
+
 textarea{
-	  padding:10px;
-	  width:25em;
-	  font-size:2em;
-	  margin:50px auto;
-	  display:block;
-	  border-radius:10px;
-	  border:6px solid #0080FF;	  
-	  min-height:6em;
-	  background: transparent;
+	padding:10px;
+	width:25em;
+	font-size:2em;
+	margin:50px auto;
+	display:block;
+	border-radius:10px;
+	border:6px solid #0080FF;	  
+	min-height:6em;
+	background: transparent;
 }
 .win{
 	color: #00FF00;

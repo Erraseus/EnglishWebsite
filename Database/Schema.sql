@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `name`, `password`) VALUES
 (1, 'Sebastian Drebenstedt', 'ae95b8e6a0c5a60ecd25421b1adb1d7c'),
-(2, 'Felix Heydick', 'e10adc3949ba59abbe56e057f20f883e');
+(2, 'Lehrer', 'e10adc3949ba59abbe56e057f20f883e');
 
 ALTER TABLE `sessions`
   ADD CONSTRAINT `sessions_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;

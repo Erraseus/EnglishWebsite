@@ -22,7 +22,7 @@ if(!empty($_REQUEST['id'])) {
 	
 	</div class="row col col-12">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<textarea  id="neuerTextIn" id="no-copy-paste" autofocus placeholder="Bitte hier eingeben" ></textarea>
+		<textarea id="neuerTextIn" id="no-copy-paste" autofocus placeholder="Bitte hier eingeben" ></textarea>
 	</div>
 
 

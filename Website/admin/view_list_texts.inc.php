@@ -32,6 +32,7 @@ $res = mysql_query($sql);
 		<thead>
 			<tr>
 				<th>Name</th>
+				<th>Klasse</th>
 				<th>Text</th>
 				<th></th>
 			</tr>
@@ -43,6 +44,7 @@ while($row = mysql_fetch_assoc($res))
 ?>
 			<tr>
 				<td><?php echo $row['name']; ?></td>
+				<td><?php echo $row['class']; ?></td>
 				<td><?php echo $row['value']; ?></td>
 				<td>
 					<div class="btn-group">

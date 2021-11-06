@@ -6,7 +6,7 @@ require "common.inc.php";
 <html lang="de">
 <head>
 	<meta charset="utf-8">
-	<title>Englisch</title>
+	<title>Effingo</title>
 
 	<meta name="author" content="Sebastian Drebenstedt">
 	
